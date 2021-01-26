@@ -1,15 +1,17 @@
 .video-card-wrapper {
   display: flex;
-  width: 90%;
+  flex-flow: row wrap;
+  // width: 90%;
   justify-content: space-around;
 
   .card {
     width: 280px;
     height: 360px;
+    margin: 20px;
     border-radius: 15px;
     padding: 1.5rem;
     background: white;
-    position: relative;
+    // position: relative;
     display: flex;
     align-items: flex-end;
     transition: 0.4s ease-out;
@@ -51,6 +53,7 @@
     }
     .info {
       position: relative;
+      width: 100%;
       z-index: 3;
       color: white;
       opacity: 0;
@@ -79,7 +82,7 @@
         transition: 0.4s ease;
 
         &:hover {
-          background: dodgerblue;
+          background: $accent1;
           color: white;
         }
       }

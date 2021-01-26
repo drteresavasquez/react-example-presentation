@@ -1,24 +1,21 @@
 import React from 'react';
-import { useHistory } from "react-router-dom";
+import { useHistory } from 'react-router-dom';
+import titleCase from '../helpers/titleCase';
 
-export default function VideoCard(props) {
+export default function VideoCard({ photo }) {
   let history = useHistory();
-  const { image, heading, desc, url} = props;
-  
+  const { user, urls, description, alt_description } = photo;
+
   const handleClick = () => {
-    history.push(`/video/${url}`);
-  }
+    history.push(`/video/${user.username}`);
+  };
+  
   return (
-    <div className='video-card-wrapper'>
-      <div className='card'>
-        <img src={image} alt={desc} />
-        <div className='info'>
-          <h1>{heading}</h1>
-          <p>
-            {desc}
-          </p>
-            <button onClick={handleClick}>Read More</button>          
-        </div>
+    <div className='card'>
+      <img src={urls.regular} alt={alt_description} />
+      <div className='info'>
+        <p>{titleCase(description || 'A wonderful day in the neighborhood')}</p>
+        <button onClick={handleClick}>Read More</button>
       </div>
     </div>
   );

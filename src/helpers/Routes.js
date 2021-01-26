@@ -15,7 +15,6 @@ export default function Routes() {
           path="/video/:id"
           component={() => <Video />}
         />
-
         <Redirect from="*" to="/" />
       </Switch>
   );
