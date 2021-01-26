@@ -5,8 +5,8 @@ This project is an example of how a Design System and Library can work together 
 ## Get Started
 1. Clone the repo
 ```
-$ git clone git@github.com:drteresavasquez/project-presentation.git
-$ cd project-presentation
+$ git clone git@github.com:drteresavasquez/react-example-presentation.git
+$ cd react-example-presentation
 ```
 2. Install packages
 ```
