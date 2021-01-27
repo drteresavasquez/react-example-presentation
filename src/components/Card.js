@@ -2,12 +2,12 @@ import React from 'react';
 import { useHistory } from 'react-router-dom';
 import titleCase from '../helpers/titleCase';
 
-export default function VideoCard({ photo }) {
+export default function Card({ photo }) {
   let history = useHistory();
   const { user, urls, description, alt_description } = photo;
 
   const handleClick = () => {
-    history.push(`/video/${user.username}`);
+    history.push(`/more/${user.username}`);
   };
   
   return (

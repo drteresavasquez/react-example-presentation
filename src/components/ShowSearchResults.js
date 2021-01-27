@@ -1,5 +1,5 @@
-import React from 'react'
-import VideoCard from './VideoCard';
+import React from 'react';
+import Card from './Card';
 
 export default function ShowSearchResults({ data }) {
   if (data === null) {
@@ -16,7 +16,7 @@ export default function ShowSearchResults({ data }) {
       <>
         <div className='video-card-wrapper'>
           {data.response.results.map((photo) => (
-            <VideoCard key={photo.id} photo={photo} />
+            <Card key={photo.id} photo={photo} />
           ))}
         </div>
       </>

@@ -7,7 +7,7 @@ export default function Search({ setQuery }) {
   }
 
   return (
-    <div>
+    <div className="m-2 d-flex flex-center">
       <form onSubmit={onSubmit}>
       <div className="row g-3 align-items-center">
         <div className="col-auto">

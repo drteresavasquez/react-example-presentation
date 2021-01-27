@@ -1,7 +1,7 @@
 import React from 'react';
 import { Switch, Route, Redirect } from 'react-router-dom';
 import Home from '../views/Home';
-import Video from '../views/Video';
+import ReadMore from '../views/ReadMore';
 
 export default function Routes() {
   return (
@@ -12,8 +12,8 @@ export default function Routes() {
           component={() => <Home />}
         />
         <Route
-          path="/video/:id"
-          component={() => <Video />}
+          path="/more/:id"
+          component={() => <ReadMore />}
         />
         <Redirect from="*" to="/" />
       </Switch>
