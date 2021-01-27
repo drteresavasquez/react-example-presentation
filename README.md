@@ -12,8 +12,12 @@ $ cd react-example-presentation
 ```
 $ npm i
 ```
-
-3. Run the project
+3. [Get Unsplash Access Key](https://unsplash.com/developers)
+4. In the root of this project, create a `.env` file and add the following:
+```
+REACT_APP_UNSPLASH_ACCESS_KEY="YOUR_UNSPLASH_ACCESS_KEY"
+```
+5. Run the project
 ```
 $ npm start
 ```
